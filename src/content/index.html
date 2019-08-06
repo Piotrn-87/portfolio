@@ -26,6 +26,8 @@
 </head>
 
 <body>
+
+  <!-- Header  -->
   <header class="hero">
     <img class="hero__image" src="../assets/img/Avatar.png" alt="Profil photo">
     <h1 class="hero__title">
@@ -38,11 +40,13 @@
     </p>
     <a class="hero__mail" href="mailto:piotrn-87@o2.pl">piotrn-87@o2.pl</a>
   </header>
-  <main class="main">
+
+  <!-- Main  -->
+  <main id="skills" class="main">
     <h2 class="skills__title">
       My skills
     </h2>
-    <section id="skills" class="skills-list skills-list--first">
+    <section class="skills-list skills-list--first">
       <h3 class="skills-list__title ">Working knowledge</h3>
       <ul class="skills-list__items">
         <li class="skills-list__item">Semantic HTML5</li>
@@ -81,9 +85,21 @@
         <li class="skills-list__item">Server side rendering</li>
       </ul>
     </section>
-
   </main>
 
+  <!-- Article - Projects -->
+  <article id="project" class="projects">
+    <h1 class="projects__title">Recent Projects</h1>
+    <p class="projects__description">I started programming in 2017 my first
+      language was C++. And actually I'am improving Frontend developer skills. Here’s the list of the things I’ve done
+      so far </p>
+    <div class="project-items">
+      <ul class="project-items project-items--js"></ul>
+      <button class="project-items__button project-items__button--js"></button>
+    </div>
+  </article>
+
+  <!-- Footer  -->
   <footer class="footer">
 
   </footer>
