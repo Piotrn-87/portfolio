@@ -19,6 +19,7 @@
         font-style: normal;
         line-height: 3.5rem;
         max-width: 780px;
+        color: $title-color;
     }
 
     &__description {
@@ -30,6 +31,7 @@
         max-width: 681px;
         max-height: 108px;
         padding-bottom: 8rem;
+        color: $descritpion-color;
     }
 
     &__mail {
