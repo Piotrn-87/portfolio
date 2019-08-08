@@ -389,7 +389,8 @@ template {
     line-height: 2.25rem;
     max-width: 681px;
     max-height: 108px;
-    color: #52606D; }
+    color: #52606D;
+    text-align: justify; }
 
 .skills {
   max-width: 1240px;
