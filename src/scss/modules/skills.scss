@@ -1,0 +1,74 @@
+.skills {
+    background: lightgrey;
+    max-width: 1240px;
+    padding: 0 3.5rem;
+    margin: 8rem 0;
+
+    &__title {
+        color: #171F3F;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        padding: 1rem 0;
+        border-bottom: 2px solid #E5E8EC;
+    }
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    padding-top: 5rem;
+
+    &__title {
+        color: #171F3F;
+        font-size: 2rem;
+        line-height: 2.75rem;
+        margin: 0;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 90px;
+            height: 4px;
+            margin-bottom: 1.6rem;
+            background: $check-green;
+
+            .skills-list--second & {
+                background: $check-purple;
+            }
+
+            .skills-list--third & {
+                background: $check-blue;
+            }
+        }
+    }
+
+    &__item {
+        color: $item-color;
+        padding: .5rem;
+        position: relative;
+        list-style-type: none;
+        font-size: 1.1rem;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 1.1rem;
+            height: 1.1rem;
+            top: .5rem;
+            left: -1.5rem;
+            display: block;
+            background: url('../assets/img/check-circle-green.png');
+
+            .skills-list--second & {
+                background: url('../assets/img/check-circle-purple.png');
+            }
+
+            .skills-list--third & {
+                background: url('../assets/img/check-circle-blue.png');
+            }
+        }
+    }
+
+}

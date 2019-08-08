@@ -309,13 +309,13 @@ template {
   display: none; }
 
 .hero {
-  max-width: 1440px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 10rem 8rem 5rem 5rem; }
   .hero__image {
     position: absolute;
     left: 6rem;
-    top: 5rem;
+    top: 6rem;
     border-radius: 50%;
     width: 7rem;
     height: 7rem; }
@@ -325,7 +325,8 @@ template {
     font-style: normal;
     line-height: 3.5rem;
     max-width: 780px;
-    color: #171F3F; }
+    color: #171F3F;
+    padding-top: 3rem; }
   .hero__description {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -334,7 +335,7 @@ template {
     line-height: 36px;
     max-width: 681px;
     max-height: 108px;
-    padding-bottom: 8rem;
+    padding-bottom: 10rem;
     color: #52606D; }
   .hero__mail {
     font-style: normal;
@@ -347,6 +348,64 @@ template {
     border-bottom: 2px solid #0593FB; }
   .hero__anchor {
     color: #0593FB; }
+
+.skills {
+  background: lightgrey;
+  max-width: 1240px;
+  padding: 0 3.5rem;
+  margin: 8rem 0; }
+  .skills__title {
+    color: #171F3F;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding: 1rem 0;
+    border-bottom: 2px solid #E5E8EC; }
+
+.skills-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 5rem;
+     -moz-column-gap: 5rem;
+          column-gap: 5rem;
+  padding-top: 5rem; }
+  .skills-list__title {
+    color: #171F3F;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    margin: 0; }
+    .skills-list__title::before {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 4px;
+      margin-bottom: 1.6rem;
+      background: #06C847; }
+      .skills-list--second .skills-list__title::before {
+        background: #653CAD; }
+      .skills-list--third .skills-list__title::before {
+        background: #2251CC; }
+  .skills-list__item {
+    color: #52606D;
+    padding: .5rem;
+    position: relative;
+    list-style-type: none;
+    font-size: 1.1rem; }
+    .skills-list__item::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1.1rem;
+      height: 1.1rem;
+      top: .5rem;
+      left: -1.5rem;
+      display: block;
+      background: url("../assets/img/check-circle-green.png"); }
+      .skills-list--second .skills-list__item::before {
+        background: url("../assets/img/check-circle-purple.png"); }
+      .skills-list--third .skills-list__item::before {
+        background: url("../assets/img/check-circle-blue.png"); }
 
 html {
   -webkit-box-sizing: border-box;
