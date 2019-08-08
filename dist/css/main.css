@@ -326,7 +326,31 @@ template {
     line-height: 3.5rem;
     max-width: 780px;
     color: #171F3F;
-    padding-top: 3rem; }
+    padding-top: 3rem;
+    text-align: justify; }
+  .hero__hand {
+    cursor: pointer;
+    display: inline-block; }
+    .hero__hand:hover {
+      opacity: .8;
+      -webkit-animation: shakes .3s linear infinite alternate;
+              animation: shakes .3s linear infinite alternate; }
+
+@-webkit-keyframes shakes {
+  0% {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg); }
+  100% {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg); } }
+
+@keyframes shakes {
+  0% {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg); }
+  100% {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg); } }
   .hero__description {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -336,6 +360,7 @@ template {
     max-width: 681px;
     max-height: 108px;
     padding-bottom: 10rem;
+    text-align: justify;
     color: #52606D; }
   .hero__mail {
     font-style: normal;

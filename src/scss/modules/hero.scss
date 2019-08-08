@@ -20,7 +20,29 @@
         max-width: 780px;
         color: $title-color;
         padding-top: 3rem;
+        text-align: justify;
     }
+
+    &__hand {
+        cursor: pointer;
+        display: inline-block;
+
+        &:hover {
+            opacity: .8;
+            animation: shakes .3s linear infinite alternate;
+        }
+
+        @keyframes shakes {
+            0% {
+                transform: rotate(35deg);
+            }
+
+            100% {
+                transform: rotate(-35deg);
+            }
+        }
+    }
+
 
     &__description {
         font-family: 'Poppins', sans-serif;
@@ -31,6 +53,7 @@
         max-width: 681px;
         max-height: 108px;
         padding-bottom: 10rem;
+        text-align: justify;
         color: $descritpion-color;
     }
 
