@@ -333,8 +333,8 @@ template {
     display: inline-block; }
     .hero__hand:hover {
       opacity: .8;
-      -webkit-animation: shakes .3s linear infinite alternate;
-              animation: shakes .3s linear infinite alternate; }
+      -webkit-animation: shakes .3s ease-in-out infinite alternate;
+              animation: shakes .3s ease-in-out infinite alternate; }
 
 @-webkit-keyframes shakes {
   0% {

@@ -29,7 +29,7 @@
 
         &:hover {
             opacity: .8;
-            animation: shakes .3s linear infinite alternate;
+            animation: shakes .3s ease-in-out infinite alternate;
         }
 
         @keyframes shakes {
@@ -42,7 +42,6 @@
             }
         }
     }
-
 
     &__description {
         font-family: 'Poppins', sans-serif;
