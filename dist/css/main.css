@@ -311,7 +311,7 @@ template {
 .hero {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 10rem 8rem 5rem 5rem; }
+  padding: 10rem 8rem 5rem 2rem; }
   .hero__image {
     position: absolute;
     left: 6rem;
@@ -374,9 +374,26 @@ template {
   .hero__anchor {
     color: #0593FB; }
 
+.projects {
+  max-width: 1240px;
+  padding: 0 8rem 0 4rem;
+  margin: 8rem 0; }
+  .projects__title {
+    color: #171F3F;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding: 1rem 0; }
+  .projects__description {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    max-width: 681px;
+    max-height: 108px;
+    color: #52606D; }
+
 .skills {
   max-width: 1240px;
-  padding: 0 3.5rem;
+  padding: 0 4rem;
   margin: 8rem 0; }
   .skills__title {
     color: #171F3F;

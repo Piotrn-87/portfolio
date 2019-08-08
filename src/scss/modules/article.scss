@@ -1,0 +1,21 @@
+.projects {
+    max-width: 1240px;
+    padding: 0 8rem 0 4rem;
+    margin: 8rem 0;
+
+    &__title {
+        color: $title-color;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        padding: 1rem 0;
+    }
+
+    &__description {
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        max-width: 681px;
+        max-height: 108px;
+        color: $description-color;
+    }
+}
