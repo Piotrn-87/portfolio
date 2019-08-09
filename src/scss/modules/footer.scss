@@ -1,0 +1,45 @@
+.footer {
+    max-width: 1440px;
+    width: 100%;
+    height: 35rem;
+    padding: 5rem 10rem 0 4rem;
+    background: $border;
+
+    &__title {
+        color: #fff;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        padding: 1rem 0;
+
+        &::before {
+            background: $blue;
+            content: "";
+            display: block;
+            height: 4px;
+            margin-bottom: 1.6rem;
+            width: 5.6rem;
+        }
+    }
+
+    &__description {
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    &__mail {
+        color: $blue;
+        text-decoration: none;
+        border-bottom: 2px solid $blue;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.socials {
+    padding: 2rem 1rem;
+
+    &__link {
+        padding: .5rem;
+    }
+}
