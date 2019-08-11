@@ -395,15 +395,13 @@ template {
     color: #52606D;
     text-align: justify; }
 
-.projects-items {
+.container__projects {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
-  list-style-type: none;
-  margin: 0;
   padding: 0; }
 
 .project {
@@ -424,14 +422,28 @@ template {
   .project__name {
     color: #171F3F;
     font-size: 1.25rem;
-    line-height: 2rem; }
+    line-height: 2rem;
+    margin: 0;
+    padding: .5rem 0; }
   .project__description {
     color: #52606D;
     font-size: 1.1rem;
     font-weight: 300;
-    line-height: 2rem; }
+    line-height: 2rem;
+    margin: 0; }
   .project__wrapper {
     padding: 2rem; }
+  .project__footer {
+    background: #F5F7FA;
+    height: 4rem;
+    width: 100%;
+    padding: 1.2rem 0 0 11rem; }
+  .project__link {
+    color: #0593FB;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0 1rem; }
 
 .skills {
   max-width: 1240px;
