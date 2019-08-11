@@ -1,6 +1,6 @@
 "use strict";
 
-const list = document.querySelector('.projects__items--js');
+const list = document.querySelector('.container__projects--js');
 const button = document.querySelector('.button__more--js');
 
 fetch('https://api.github.com/users/piotrn-87/repos?sort=updated&direction=desc')
@@ -15,16 +15,26 @@ fetch('https://api.github.com/users/piotrn-87/repos?sort=updated&direction=desc'
         html_url
       } = repository;
       list.innerHTML +=
-        `<li class="projects__item">
-        <div class="projects__wrapper">
-        <img class="projects__logo" src="assets/img/github.svg" alt="github icon">
-        <h3 class="projects__name">${name}</h3> 
-        ${description ? `<p class="projects__description">${description}</p>`: `no description`
-        }
-        </div>
-            <a class="projects__link" 
-            href="${repository.html_url}"> ${repository.name}</a></li>`;
+        `<li class="project">
+          <div class="project__wrapper">
+          <img class="project__logo" src="assets/img/github.svg" alt="github icon">
+          <h3 class="project__name">${name}</h3> 
+          ${description ? `<p class="project__description">${description}</p>`: 'no description'
+          }
+          </div>
+          <div class="project__footer">
+          ${homepage ? `<a class="project__link" href="${homepage}" target="_blank" title="Demo : ${name}">Demo</a>` : ''
+          }
+          <a class="project__link" href="${html_url}" target="_blank" title="source : ${name}">Github</a>
+          </div>
+        </li>
+        `;
+      console.log(name);
+      console.log(description);
+      console.log(html_url);
+      console.log(homepage);
     }
+
   })
 
   .catch(error => {

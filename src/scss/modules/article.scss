@@ -22,36 +22,59 @@
     }
 }
 
-.projects-wrapper {
+.container {
+    &__projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        padding: 0;
+    }
+}
+
+
+.project {
+    background: #FFFFFF;
     box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
     border-radius: 8px;
-    padding: 1rem;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-.projects__items {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-    row-gap: 1.5rem;
-    list-style-type: none;
 
-    &__item {}
-
-    &__wrapper {}
-
-    &__logo {}
-
-    &__name {}
-
-    &__link {}
-}
-
-.button {
-    width: 100%;
-    background: grey;
-
-    &__more {
-        display: block;
-        text-align: center;
+    &__name {
+        color: $border;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin: 0;
+        padding: .5rem 0;
     }
+
+    &__description {
+        color: $item-color;
+        font-size: 1.1rem;
+        font-weight: 300;
+        line-height: 2rem;
+        margin: 0;
+    }
+
+    &__wrapper {
+        padding: 2rem;
+    }
+
+    &__footer {
+        background: $background-grey;
+        height: 4rem;
+        width: 100%;
+        padding: 1.2rem 0 0 11rem;
+    }
+
+    &__link {
+        color: $blue;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 0 1rem;
+    }
+
 }
