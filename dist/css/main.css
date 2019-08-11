@@ -377,9 +377,10 @@ template {
     color: #2251CC; }
 
 .projects {
-  max-width: 1240px;
   padding: 0 8rem 0 4rem;
-  margin: 8rem 0; }
+  margin: 8rem 0;
+  background: #F5F7FA;
+  width: 100%; }
   .projects__title {
     color: #171F3F;
     font-size: 2.25rem;
@@ -393,6 +394,30 @@ template {
     max-height: 108px;
     color: #52606D;
     text-align: justify; }
+
+.projects-wrapper {
+  -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+          box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+  border-radius: 8px;
+  padding: 1rem; }
+
+.projects__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 1.5rem;
+  list-style-type: none; }
+
+.button {
+  width: 100%;
+  background: grey; }
+  .button__more {
+    display: block;
+    text-align: center; }
 
 .skills {
   max-width: 1240px;

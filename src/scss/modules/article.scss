@@ -1,7 +1,8 @@
 .projects {
-    max-width: 1240px;
     padding: 0 8rem 0 4rem;
     margin: 8rem 0;
+    background: $background-grey;
+    width: 100%;
 
     &__title {
         color: $title-color;
@@ -18,5 +19,39 @@
         max-height: 108px;
         color: $description-color;
         text-align: justify;
+    }
+}
+
+.projects-wrapper {
+    box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.projects__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+    list-style-type: none;
+
+    &__item {}
+
+    &__wrapper {}
+
+    &__logo {}
+
+    &__name {}
+
+    &__link {}
+}
+
+.button {
+    width: 100%;
+    background: grey;
+
+    &__more {
+        display: block;
+        text-align: center;
     }
 }
