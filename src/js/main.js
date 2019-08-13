@@ -17,22 +17,18 @@ fetch('https://api.github.com/users/piotrn-87/repos?sort=updated&direction=desc'
       list.innerHTML +=
         `<li class="project">
           <div class="project__wrapper">
-          <img class="project__logo" src="assets/img/github.svg" alt="github icon">
+          <img class="project__logo" src="assets/img/github.svg" alt="github image">
           <h3 class="project__name">${name}</h3> 
           ${description ? `<p class="project__description">${description}</p>`: 'no description'
           }
           </div>
           <div class="project__footer">
-          ${homepage ? `<a class="project__link" href="${homepage}" target="_blank" title="Demo : ${name}">Demo</a>` : ''
+          ${homepage ? `<a class="project__link project__link--active" href="${homepage}" target="_blank" title="Demo : ${name}">Demo</a>` : ''
           }
           <a class="project__link" href="${html_url}" target="_blank" title="source : ${name}">Github</a>
           </div>
         </li>
         `;
-      console.log(name);
-      console.log(description);
-      console.log(html_url);
-      console.log(homepage);
     }
 
   })

@@ -1,7 +1,6 @@
 .projects {
-    padding: 0 8rem 0 4rem;
-    margin: 8rem 0;
     background: $background-grey;
+    padding: 6rem 8rem 6rem 6rem;
     width: 100%;
 
     &__title {
@@ -12,12 +11,12 @@
     }
 
     &__description {
+        color: $description-color;
         font-weight: 300;
         font-size: 1.25rem;
         line-height: 2.25rem;
         max-width: 681px;
         max-height: 108px;
-        color: $description-color;
         text-align: justify;
     }
 }
@@ -41,7 +40,6 @@
     flex-direction: column;
     justify-content: space-between;
 
-
     &__name {
         color: $border;
         font-size: 1.25rem;
@@ -64,17 +62,52 @@
 
     &__footer {
         background: $background-grey;
-        height: 4rem;
+        padding: 1rem 2rem;
+        text-align: end;
         width: 100%;
-        padding: 1.2rem 0 0 11rem;
     }
 
     &__link {
         color: $blue;
         font-size: 1.1rem;
         font-weight: 500;
+        line-height: 2rem;
         text-decoration: none;
         padding: 0 1rem;
-    }
+        display: inline-flex;
+        align-items: center;
 
+        &:nth-child(2) {
+
+            position: relative;
+
+            &::after {
+                background: #CBD2D9;
+                content: "";
+                display: block;
+                height: 2rem;
+                pointer-events: none;
+                position: absolute;
+                left: -2%;
+                width: 2px;
+            }
+        }
+
+        &::before {
+            background: url("../assets/img/Code.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            content: "";
+            display: block;
+            height: 24px;
+            margin: 0 .5rem;
+            width: 24px;
+        }
+
+        &--active::before {
+            background: url("../assets/img/Demo.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
 }

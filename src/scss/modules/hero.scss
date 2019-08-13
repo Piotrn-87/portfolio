@@ -3,11 +3,13 @@
     margin: 0 auto;
     padding: 10rem 8rem 5rem 4rem;
 
+
     &__image {
         position: absolute;
-        left: 6rem;
+        left: 7.5rem;
         top: 6rem;
         border-radius: 50%;
+        border: .4rem solid lightgrey;
         width: 7rem;
         height: 7rem;
     }
