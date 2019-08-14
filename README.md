@@ -1,5 +1,7 @@
+![Homepage screenshot](dist/assets/img/Image.png)
 # Personal Website - Portfolio
-My personal website 
+
+My personal [website](https://piotrn-87.github.io/portfolio) 
 
 # Technologies & tools I've used
 * Fetch API
@@ -18,4 +20,4 @@ to run locally ->
 `gulp`
 
 # Contact
- feel free to contact with me! 
+ feel free to contact me! 
