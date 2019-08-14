@@ -313,20 +313,20 @@ template {
   margin: 0 auto;
   padding: 10rem 8rem 5rem 4rem; }
   .hero__image {
-    position: absolute;
-    left: 7.5rem;
-    top: 6rem;
     border-radius: 50%;
     border: .4rem solid lightgrey;
-    width: 7rem;
-    height: 7rem; }
+    height: 7rem;
+    left: 7.5rem;
+    position: absolute;
+    top: 6rem;
+    width: 7rem; }
   .hero__title {
+    color: #171F3F;
     font-family: 'Poppins', sans-serif;
     font-size: 2.8rem;
     font-style: normal;
     line-height: 3.5rem;
     max-width: 48.7rem;
-    color: #171F3F;
     padding-top: 3rem;
     text-align: justify; }
   .hero__hand {
@@ -353,6 +353,7 @@ template {
     -webkit-transform: rotate(-35deg);
             transform: rotate(-35deg); } }
   .hero__description {
+    color: #52606D;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -361,8 +362,7 @@ template {
     max-width: 42.5rem;
     max-height: 108px;
     padding-bottom: 10rem;
-    text-align: justify;
-    color: #52606D; }
+    text-align: justify; }
   .hero__mail {
     color: #0593FB;
     text-decoration: none;
@@ -373,9 +373,14 @@ template {
     font-size: 1.2rem;
     font-style: none; }
   .hero__anchor {
-    color: #0593FB; }
+    color: #0593FB;
+    text-decoration: none;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
   .hero__anchor:hover {
-    color: #2251CC; }
+    color: #2251CC;
+    font-size: 1.25rem; }
 
 .projects {
   background: #F5F7FA;
@@ -495,7 +500,18 @@ template {
   -webkit-column-gap: 1rem;
      -moz-column-gap: 1rem;
           column-gap: 1rem;
-  padding-top: 5rem; }
+  padding-top: 5rem;
+  -webkit-transition: 1s linear;
+  -o-transition: 1s linear;
+  transition: 1s linear; }
+  .skills-list--first, .skills-list--third {
+    -webkit-transform: translateX(-100vw);
+        -ms-transform: translateX(-100vw);
+            transform: translateX(-100vw); }
+  .skills-list--second {
+    -webkit-transform: translateX(100vw);
+        -ms-transform: translateX(100vw);
+            transform: translateX(100vw); }
   .skills-list__title {
     color: #171F3F;
     font-size: 2rem;
@@ -539,6 +555,11 @@ template {
         background: url("../assets/img/check-circle-purple.png"); }
       .skills-list--third .skills-list__item::before {
         background: url("../assets/img/check-circle-blue.png"); }
+
+.active {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0); }
 
 .footer {
   max-width: 1440px;
