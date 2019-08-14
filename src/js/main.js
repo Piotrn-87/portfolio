@@ -30,9 +30,38 @@ fetch('https://api.github.com/users/piotrn-87/repos?sort=updated&direction=desc'
         </li>
         `;
     }
-
   })
 
   .catch(error => {
     console.log('cant find github API');
   })
+
+
+$(document).on("scroll", function () {
+
+  const windowHeight = $(window).height();
+  const scrollValue = $(this).scrollTop();
+
+  const firstSection = $(".skills-list--first");
+  const firstSectionFromTop = firstSection.offset().top;
+  const firstSectionHeight = firstSection.height();
+
+  const secondSection = $(".skills-list--second");
+  const secondSectionFromTop = secondSection.offset().top;
+  const secondSectionHeight = secondSection.height();
+
+  const thirdSection = $(".skills-list--third");
+  const thirdSectionFromTop = thirdSection.offset().top;
+  const thirdSectionHeight = thirdSection.height();
+
+  if (scrollValue > firstSectionFromTop + firstSectionHeight - windowHeight) {
+    firstSection.addClass("active");
+  }
+
+  if (scrollValue > secondSectionFromTop + secondSectionHeight - windowHeight) {
+    secondSection.addClass("active");
+  }
+  if (scrollValue > thirdSectionFromTop + thirdSectionHeight - windowHeight) {
+    thirdSection.addClass("active");
+  }
+})
