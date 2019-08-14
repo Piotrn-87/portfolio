@@ -1,4 +1,4 @@
-![Homepage screenshot](dist/assets/img/Image.png)
+![Homepage screenshot](dist/assets/img/image.png)
 # Personal Website - Portfolio
 
 My personal [website](https://piotrn-87.github.io/portfolio) 
