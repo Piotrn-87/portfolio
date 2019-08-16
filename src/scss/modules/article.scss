@@ -1,13 +1,21 @@
 .projects {
     background: $background-grey;
-    padding: 6rem 8rem 6rem 6rem;
+    padding: 6rem 3rem;
     width: 100%;
+
+    @media (max-width: $mobile) {
+        padding: 2rem 2rem 6rem 2rem;
+    }
 
     &__title {
         color: $title-color;
         font-size: 2.25rem;
         line-height: 2.75rem;
         padding: 1rem 0;
+
+        @media(max-width: $mobile) {
+            text-align: center;
+        }
     }
 
     &__description {
@@ -28,9 +36,13 @@
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
         padding: 0;
+
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        }
     }
 }
-
 
 .project {
     background: #FFFFFF;
@@ -39,6 +51,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 
     &__name {
         color: $border;
@@ -68,14 +81,14 @@
     }
 
     &__link {
+        align-items: center;
         color: $blue;
+        display: inline-flex;
         font-size: 1.1rem;
         font-weight: 500;
         line-height: 2rem;
-        text-decoration: none;
         padding: 0 1rem;
-        display: inline-flex;
-        align-items: center;
+        text-decoration: none;
 
         &:nth-child(2) {
 
@@ -86,9 +99,9 @@
                 content: "";
                 display: block;
                 height: 2rem;
+                left: -2%;
                 pointer-events: none;
                 position: absolute;
-                left: -2%;
                 width: 2px;
             }
         }

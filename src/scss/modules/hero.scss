@@ -1,17 +1,24 @@
 .hero {
     max-width: 1240px;
     margin: 0 auto;
-    padding: 10rem 8rem 5rem 4rem;
+    // padding: calc(8rem - 3rem) 3rem 5rem 2rem;
+    padding: 5rem 3rem;
+
+    @media (max-width: $mobile) {
+        padding: 4rem 2rem 2rem 2rem;
+    }
 
 
     &__image {
-        position: absolute;
-        left: 7.5rem;
-        top: 6rem;
         border-radius: 50%;
-        border: .4rem solid lightgrey;
-        width: 7rem;
-        height: 7rem;
+        border: .4rem solid lightslategrey;
+        height: 7.5rem;
+        width: 7.5rem;
+
+        @media (max-width: $mobile) {
+            height: 10rem;
+            width: 10rem;
+        }
     }
 
     &__title {
@@ -21,8 +28,12 @@
         line-height: 3.5rem;
         max-width: 48.7rem;
         color: $border;
-        padding-top: 3rem;
+        padding-top: 1rem;
         text-align: justify;
+
+        @media (max-width: $mobile) {
+            padding-top: 1rem;
+        }
     }
 
     &__hand {
@@ -53,7 +64,7 @@
         line-height: 2.25rem;
         max-width: 42.5rem;
         max-height: 108px;
-        padding-bottom: 10rem;
+        padding-bottom: 8rem;
         text-align: justify;
         color: $description-color;
     }
@@ -62,7 +73,6 @@
         color: $blue;
         text-decoration: none;
         border-bottom: 2px solid $blue;
-        font-size: 1.5rem;
         line-height: 2rem;
         padding-bottom: 1rem;
         font-size: 1.2rem;
@@ -71,9 +81,12 @@
 
     &__anchor {
         color: $blue;
+        text-decoration: none;
+        animation: .3s ease-in-out;
     }
 
     &__anchor:hover {
         color: $check-blue;
+        font-size: 1.25rem;
     }
 }
