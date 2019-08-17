@@ -357,6 +357,7 @@ template {
     border-radius: .3rem;
     cursor: pointer;
     font-size: 1.2rem;
+    font-weight: 600;
     padding: 1rem 3rem; }
     .container .button__load:hover {
       background: #171F3F;
