@@ -358,7 +358,11 @@ template {
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: 600;
-    padding: 1rem 3rem; }
+    padding: 1rem 3rem;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+    text-transform: uppercase; }
     .container .button__load:hover {
       background: #171F3F;
       color: #F5F7FA; }
