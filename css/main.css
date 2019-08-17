@@ -363,9 +363,10 @@ template {
     -o-transition: .3s linear;
     transition: .3s linear;
     text-transform: uppercase; }
-    .container .button__load:hover {
-      background: #171F3F;
-      color: #F5F7FA; }
+    @media (min-width: 641px) {
+      .container .button__load:hover {
+        background: #171F3F;
+        color: #F5F7FA; } }
 
 .project {
   background: #FFFFFF;
