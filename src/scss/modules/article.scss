@@ -61,12 +61,13 @@
             transition: .3s linear;
             text-transform: uppercase;
 
-            &:hover {
-                background: $border;
-                color: $background-grey;
+            @media(min-width: $mobile) {
+                &:hover {
+                    background: $border;
+                    color: $background-grey;
+                }
             }
         }
-
     }
 }
 
