@@ -1,7 +1,6 @@
 .hero {
-    max-width: 1240px;
+    max-width: 1440px;
     margin: 0 auto;
-    // padding: calc(8rem - 3rem) 3rem 5rem 2rem;
     padding: 5rem 3rem;
 
     @media (max-width: $mobile) {
@@ -29,7 +28,6 @@
         max-width: 48.7rem;
         color: $border;
         padding-top: 1rem;
-        text-align: justify;
 
         @media (max-width: $mobile) {
             padding-top: 1rem;
@@ -65,7 +63,6 @@
         max-width: 42.5rem;
         max-height: 108px;
         padding-bottom: 8rem;
-        text-align: justify;
         color: $description-color;
     }
 
@@ -87,6 +84,5 @@
 
     &__anchor:hover {
         color: $check-blue;
-        font-size: 1.25rem;
     }
 }

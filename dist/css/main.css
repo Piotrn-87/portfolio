@@ -311,7 +311,7 @@ template {
 .projects {
   background: #F5F7FA;
   padding: 4rem 3rem;
-  width: 100%; }
+  max-width: 1440px; }
   @media (max-width: 641px) {
     .projects {
       padding: 2rem 2rem 4rem 2rem; } }
@@ -445,8 +445,7 @@ template {
   background: #171F3F;
   height: 35rem;
   max-width: 1440px;
-  padding: 5rem 3rem 0 3rem;
-  width: 100%; }
+  padding: 5rem 3rem 0 3rem; }
   @media (max-width: 641px) {
     .footer {
       padding: 5rem 2rem 0 2rem; } }
@@ -479,7 +478,7 @@ template {
     padding: .5rem; }
 
 .hero {
-  max-width: 1240px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 5rem 3rem; }
   @media (max-width: 641px) {
@@ -501,8 +500,7 @@ template {
     line-height: 3.5rem;
     max-width: 48.7rem;
     color: #171F3F;
-    padding-top: 1rem;
-    text-align: justify; }
+    padding-top: 1rem; }
     @media (max-width: 641px) {
       .hero__title {
         padding-top: 1rem; } }
@@ -538,7 +536,6 @@ template {
     max-width: 42.5rem;
     max-height: 108px;
     padding-bottom: 8rem;
-    text-align: justify;
     color: #52606D; }
   .hero__mail {
     color: #0593FB;
@@ -554,11 +551,10 @@ template {
     -webkit-animation: .3s ease-in-out;
             animation: .3s ease-in-out; }
   .hero__anchor:hover {
-    color: #2251CC;
-    font-size: 1.25rem; }
+    color: #2251CC; }
 
 .skills {
-  max-width: 1240px;
+  max-width: 1440px;
   margin: 4rem auto;
   padding: 0 3rem; }
   @media (max-width: 641px) {
