@@ -1,0 +1,18 @@
+#progressBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 1rem;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate linear 10s infinite;
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
