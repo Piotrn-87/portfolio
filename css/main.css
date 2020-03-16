@@ -640,6 +640,34 @@ template {
       .skills-list--third .skills-list__item::before {
         background: url("../assets/img/check-circle-blue.png"); }
 
+#progressBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 1rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(#008aff), to(#00ffe7));
+  background: -webkit-linear-gradient(bottom, #008aff, #00ffe7);
+  background: -o-linear-gradient(bottom, #008aff, #00ffe7);
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  -webkit-animation: animate linear 10s infinite;
+          animation: animate linear 10s infinite; }
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg); }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg); } }
+
+@keyframes animate {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg); }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg); } }
+
 html {
   scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
