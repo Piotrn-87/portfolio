@@ -6,8 +6,8 @@ const button = document.querySelector(".button__load--js");
 let progress = document.getElementById("progressBar");
 let totalHeight = document.body.scrollHeight - window.innerHeight;
 window.onscroll = function() {
-  let progressHeight = (window.pageYOffset / (totalHeight * 1.25)) * 100;
-  progress.style.height = progressHeight + "%";
+  let progressHeight = (window.pageYOffset / (totalHeight * 1.3)) * 100;
+  progress.style.width = progressHeight + "%";
 };
 
 const loadRepo = () => {
