@@ -643,12 +643,12 @@ template {
 #progressBar {
   position: fixed;
   top: 0;
-  right: 0;
-  width: 1rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(#008aff), to(#00ffe7));
-  background: -webkit-linear-gradient(bottom, #008aff, #00ffe7);
-  background: -o-linear-gradient(bottom, #008aff, #00ffe7);
-  background: linear-gradient(to top, #008aff, #00ffe7);
+  left: 0;
+  height: 1rem;
+  background: -webkit-gradient(linear, right top, left top, from(#008aff), to(#00ffe7));
+  background: -webkit-linear-gradient(right, #008aff, #00ffe7);
+  background: -o-linear-gradient(right, #008aff, #00ffe7);
+  background: linear-gradient(to left, #008aff, #00ffe7);
   -webkit-animation: animate linear 10s infinite;
           animation: animate linear 10s infinite; }
 
